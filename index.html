@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c10">
+  <meta name="description" content="Discover, preview, and copy exceptional AI image prompts.">
+  <title>PromptVault — Find your next image</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✳</span><span>prompt<span class="brand-light">vault</span></span></a>
+    <nav><a class="nav-active" href="#explore">Explore</a><a href="#how">How it works</a></nav>
+    <a class="submit-link" href="https://github.com/mdsanim572-coder/ai-prompt-vault-" target="_blank" rel="noreferrer">Contribute <span>↗</span></a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> THE CREATIVE PROMPT LIBRARY</div>
+      <h1>Your next great image<br>starts <span>with a prompt.</span></h1>
+      <p class="hero-copy">Explore creative prompts, preview the visual direction, and copy a prompt in one click. Made for people who love making things.</p>
+      <a class="hero-cta" href="#explore">Explore prompts <span>↓</span></a>
+      <div class="hero-meta"><span>✳ Curated inspiration</span><i></i><span>⌘ One-click copy</span><i></i><span>◈ Multiple styles</span></div>
+    </section>
+    <section class="explore-section" id="explore">
+      <div class="section-heading"><div><div class="eyebrow">THE COLLECTION</div><h2>Find your visual style.</h2></div><div class="count" id="result-count">12 prompts</div></div>
+      <div class="toolbar">
+        <label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Search prompts, styles, ideas..." autocomplete="off"></label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="All">All prompts</button>
+          <button class="filter" data-filter="Photography">Photography</button>
+          <button class="filter" data-filter="Cinematic">Cinematic</button>
+          <button class="filter" data-filter="Fantasy">Fantasy</button>
+          <button class="filter" data-filter="3D Art">3D art</button>
+          <button class="filter" data-filter="Anime">Anime</button>
+          <button class="filter" data-filter="Design">Design</button>
+        </div>
+      </div>
+      <div class="grid" id="prompt-grid" aria-live="polite"></div>
+      <div class="empty hidden" id="empty">No prompts match that search. Try another keyword.</div>
+    </section>
+    <section class="how-section" id="how">
+      <div class="eyebrow">SIMPLE BY DESIGN</div><h2>From idea to image<br>in three steps.</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Discover</h3><p>Browse styles and find a visual direction worth exploring.</p></article>
+        <article><span>02</span><h3>Copy</h3><p>Grab the complete prompt instantly. No sign-up or clutter.</p></article>
+        <article><span>03</span><h3>Create</h3><p>Paste it into your image generator and make it your own.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">✳</span><span>prompt<span class="brand-light">vault</span></span></a><span>A growing library for curious creators.</span><a href="https://github.com/mdsanim572-coder/ai-prompt-vault-" target="_blank" rel="noreferrer">Open source on GitHub ↗</a></footer>
+  <div class="toast" id="toast" role="status">Prompt copied</div>
+  <script src="prompts.js"></script><script src="app.js"></script>
+</body></html>
